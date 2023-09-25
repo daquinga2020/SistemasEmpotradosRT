@@ -1,0 +1,93 @@
+Medida con programa .c
+LABORATORIO
+
+idle
+
+[0]	latencia media: 000007145 ns. | max: 000014210 ns
+[1]	latencia media: 000007291 ns. | max: 000014197 ns
+[2]	latencia media: 000007641 ns. | max: 000019827 ns
+[3]	latencia media: 000006882 ns. | max: 000014507 ns
+[4]	latencia media: 000006653 ns. | max: 000014681 ns
+[5]	latencia media: 000006546 ns. | max: 000020118 ns
+
+Total latencia media: 000007026 ns. | max: 000016256 ns
+
+Hackbench
+[0]	latencia media: 000012747 ns. | max: 000033197 ns
+[1]	latencia media: 000010109 ns. | max: 000024182 ns
+[2]	latencia media: 000011505 ns. | max: 000053870 ns
+[3]	latencia media: 000011740 ns. | max: 000027340 ns
+[4]	latencia media: 000010929 ns. | max: 000025158 ns
+[5]	latencia media: 000010906 ns. | max: 000032782 ns
+
+Total latencia media: 000011322 ns. | max: 000032754 ns
+
+bonie++
+[0]	latencia media: 000007648 ns. | max: 000040622 ns
+[1]	latencia media: 000011691 ns. | max: 001474030 ns
+[2]	latencia media: 000007579 ns. | max: 000037689 ns
+[3]	latencia media: 000007790 ns. | max: 000023996 ns
+[4]	latencia media: 000007634 ns. | max: 000013417 ns
+[5]	latencia media: 000007553 ns. | max: 000021771 ns
+
+Total latencia media: 000008315 ns. | max: 000268587 ns
+
+Raspberry RT
+
+idle
+
+[0]	latencia media: 000027423 ns. | max: 000061441 ns
+[1]	latencia media: 000027192 ns. | max: 000055145 ns
+[2]	latencia media: 000026559 ns. | max: 000050275 ns
+[3]	latencia media: 000026593 ns. | max: 000050812 ns
+
+Total latencia media: 000026941 ns. | max: 000054418 ns
+
+Hackbench
+
+[0]	latencia media: 000026381 ns. | max: 000079183 ns
+[1]	latencia media: 000025006 ns. | max: 000076276 ns
+[2]	latencia media: 000026537 ns. | max: 000079406 ns
+[3]	latencia media: 000028504 ns. | max: 000097479 ns
+
+Total latencia media: 000026607 ns. | max: 000083086 ns
+
+Bonnie
+
+[0]	latencia media: 000035223 ns. | max: 000150112 ns
+[1]	latencia media: 000035664 ns. | max: 000131339 ns
+[2]	latencia media: 000034851 ns. | max: 000127300 ns
+[3]	latencia media: 000034958 ns. | max: 000121794 ns
+
+Total latencia media: 000035174 ns. | max: 000132636 ns
+
+Raspberry no RT
+
+idle
+
+[0]	latencia media: 000028339 ns. | max: 000060543 ns
+[1]	latencia media: 000029023 ns. | max: 000047878 ns
+[2]	latencia media: 000028860 ns. | max: 000062807 ns
+[3]	latencia media: 000028465 ns. | max: 000059678 ns
+
+Total latencia media: 000028671 ns. | max: 000057726 ns
+
+
+Hackbench
+
+[0]	latencia media: 000044896 ns. | max: 000124483 ns
+[1]	latencia media: 000044462 ns. | max: 000112137 ns
+[2]	latencia media: 000044214 ns. | max: 000113008 ns
+[3]	latencia media: 000043992 ns. | max: 000127517 ns
+
+Total latencia media: 000044391 ns. | max: 000119286 ns
+
+
+bonnie+++
+
+[0]	latencia media: 000030607 ns. | max: 000049412 ns
+[1]	latencia media: 000030170 ns. | max: 000061146 ns
+[2]	latencia media: 000030355 ns. | max: 000066573 ns
+[3]	latencia media: 000030122 ns. | max: 000063072 ns
+
+Total latencia media: 000030313 ns. | max: 000060050 ns

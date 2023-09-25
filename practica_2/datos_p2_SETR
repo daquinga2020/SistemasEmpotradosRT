@@ -1,0 +1,98 @@
+Raspberry 02 con hackbench
+sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 35.33 9.89 3.39 36/552 23317           
+
+T: 0 (23307) P:99 I:1000 C:  59942 Min:   9684 Act:   25871 Avg:   25903 Max:  344784
+T: 1 (23308) P:99 I:1500 C:  39999 Min:   9052 Act:   13356 Avg:   22368 Max:  123939
+T: 2 (23309) P:99 I:2000 C:  29997 Min:   9779 Act:   16522 Avg:   25214 Max:  143111
+T: 3 (23310) P:99 I:2500 C:  23992 Min:  10167 Act:   34232 Avg:   23532 Max:  102294
+
+idle
+kinga@rbpi-02:~$ sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 7.05 21.10 11.62 1/150 23343           
+
+T: 0 (23339) P:99 I:1000 C:  59992 Min:  11986 Act:   16409 Avg:   24024 Max:  138995
+T: 1 (23340) P:99 I:1500 C:  39995 Min:  12324 Act:   16400 Avg:   20827 Max:   39209
+T: 2 (23341) P:99 I:2000 C:  29996 Min:  12425 Act:   18964 Avg:   23442 Max:   66740
+T: 3 (23342) P:99 I:2500 C:  23997 Min:  12367 Act:   19548 Avg:   24991 Max:   84666
+
+con bonnie++
+sudo cyclictest -p99 -N --smp -D 60proc` &
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 1.30 12.59 9.86 1/160 23421           
+
+T: 0 (23359) P:99 I:1000 C:  59995 Min:   7225 Act:   26011 Avg:   21409 Max:  144599
+T: 1 (23360) P:99 I:1500 C:  39997 Min:   6995 Act:   23466 Avg:   21028 Max:   99637
+T: 2 (23361) P:99 I:2000 C:  29997 Min:   6561 Act:   20768 Avg:   20569 Max:   88693
+T: 3 (23362) P:99 I:2500 C:  23998 Min:   8139 Act:   25085 Avg:   21405 Max:  111607
+
+Raspberry 14 con hackbench
+
+kinga@rbpi-14:~$ sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 178.47 84.65 32.61 5/597 32297           
+
+T: 0 (32279) P:99 I:1000 C:  59992 Min:   4403 Act:   16409 Avg:   15402 Max:   76798
+T: 1 (32280) P:99 I:1500 C:  39950 Min:   5223 Act:   11125 Avg:   14593 Max:   66519
+T: 2 (32281) P:99 I:2000 C:  29850 Min:   2309 Act:   12644 Avg:   14253 Max:   89402
+T: 3 (32282) P:99 I:2500 C:  23841 Min:   6238 Act:   28736 Avg:   15306 Max:   63904
+
+idle
+kinga@rbpi-14:~$ sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 4.18 35.78 26.51 3/188 32340          
+
+T: 0 (32336) P:99 I:1000 C:  59991 Min:  15107 Act:   18973 Avg:   23449 Max:   71193
+T: 1 (32337) P:99 I:1500 C:  39994 Min:  16090 Act:   18492 Avg:   22352 Max:   60906
+T: 2 (32338) P:99 I:2000 C:  29995 Min:  17067 Act:   23152 Avg:   22544 Max:   53320
+T: 3 (32339) P:99 I:2500 C:  23996 Min:  16788 Act:   29541 Avg:   24117 Max:   52735
+
+bonnie++
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 4.42 26.71 24.19 1/189 32360          
+
+T: 0 (32355) P:99 I:1000 C:  59992 Min:   3098 Act:   22917 Avg:   22828 Max:   79756
+T: 1 (32356) P:99 I:1500 C:  39995 Min:   4212 Act:   22929 Avg:   22698 Max:   63724
+T: 2 (32357) P:99 I:2000 C:  29995 Min:   4070 Act:   18442 Avg:   23134 Max:   52287
+T: 3 (32358) P:99 I:2500 C:  23996 Min:   4537 Act:   24442 Avg:   24303 Max:   55223
+
+ORDENADOR LABORATORIO
+idle
+policy: fifo: loadavg: 0.22 0.32 0.32 2/908 23635          
+
+T: 0 (23455) P:99 I:1000 C:  59998 Min:   1933 Act:    2294 Avg:    2587 Max:  209618
+T: 1 (23456) P:99 I:1500 C:  39998 Min:   2073 Act:    2273 Avg:    2594 Max:  213078
+T: 2 (23457) P:99 I:2000 C:  29998 Min:   2057 Act:    2258 Avg:    2493 Max:  188465
+T: 3 (23458) P:99 I:2500 C:  23999 Min:   2061 Act:    2215 Avg:    2684 Max:  205230
+T: 4 (23459) P:99 I:3000 C:  19999 Min:   2077 Act:    2123 Avg:    2797 Max:  215148
+T: 5 (23460) P:99 I:3500 C:  17142 Min:   2075 Act:    2223 Avg:    2722 Max:  190317
+
+hackbench
+
+kinga@f-l3203-pc28:~$ sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 94.00 28.53 10.13 163/1320 24822          
+
+T: 0 (24618) P:99 I:1000 C:  59991 Min:   2224 Act:    3703 Avg:    4591 Max:  213416
+T: 1 (24619) P:99 I:1500 C:  39985 Min:   2517 Act:    4969 Avg:    4765 Max:  201433
+T: 2 (24620) P:99 I:2000 C:  29985 Min:   2543 Act:    3615 Avg:    4873 Max:  195962
+T: 3 (24621) P:99 I:2500 C:  23989 Min:   2649 Act:    5460 Avg:    5285 Max:  205227
+T: 4 (24622) P:99 I:3000 C:  19921 Min:   2712 Act:    3439 Avg:    5415 Max:  200291
+T: 5 (24623) P:99 I:3500 C:  17137 Min:   2651 Act:    3299 Avg:    5283 Max:  211174
+
+bonnie++
+
+kinga@f-l3203-pc28:~$ sudo cyclictest -p99 -N --smp -D 60
+# /dev/cpu_dma_latency set to 0us
+policy: fifo: loadavg: 1.24 5.43 6.86 1/916 26890           
+
+T: 0 (26680) P:99 I:1000 C:  59997 Min:   1941 Act:    2322 Avg:    2720 Max:  211841
+T: 1 (26681) P:99 I:1500 C:  39927 Min:   2067 Act:    2707 Avg:    6673 Max: 5468832
+T: 2 (26682) P:99 I:2000 C:  29998 Min:   2069 Act:    3337 Avg:    3056 Max:  200261
+T: 3 (26683) P:99 I:2500 C:  23999 Min:   2053 Act:    3136 Avg:    3329 Max:  199172
+T: 4 (26684) P:99 I:3000 C:  19999 Min:   2072 Act:    2660 Avg:    3106 Max:  193696
+T: 5 (26685) P:99 I:3500 C:  17142 Min:   2066 Act:    2689 Avg:    3223 Max:  206289
+
+
